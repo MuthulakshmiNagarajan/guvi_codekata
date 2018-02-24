@@ -1,6 +1,13 @@
-n=int(raw_input())
-x=0
-for i in range(n+1):
-    x=x+i
-print(x)
+n=int(input())
+
+tot=0
+
+while(n>0):
     
+	dig=n%10
+    
+	tot=tot+dig
+    
+	n=n/10
+
+print(tot)
